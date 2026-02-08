@@ -1,0 +1,4 @@
+.gemini/
+.geminiignore
+*.tmp
+/root/.gemini/tmp/
