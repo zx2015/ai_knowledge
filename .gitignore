@@ -2,3 +2,12 @@
 .geminiignore
 *.tmp
 /root/.gemini/tmp/
+
+# 本地知识库，不纳入版本控制
+.learnings/
+
+# Obsidian 配置目录
+.obsidian/
+
+# Syncthing 配置目录
+.stfolder/

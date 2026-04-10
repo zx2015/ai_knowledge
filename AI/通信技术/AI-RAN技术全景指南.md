@@ -132,12 +132,20 @@ graph TD
 3.  **工具**：了解 NVIDIA Aerial 软件库（用于 GPU 加速 RAN）。
 4.  **前沿**：关注 [[DeepSeek-R1深度解析]] 中提到的推理模型在网络自愈中的应用。
 
+## 10. 通感一体化 (ISAC) 与 AI-RAN 的协同
+
+AI-RAN 的高性能计算能力为 **[[通感一体化-ISAC技术全景指南]]** 提供了理想的落地平台：
+*   **高密度信号处理**：ISAC 需要同时处理通信数据流和感知的雷达回波，AI-RAN 中的 GPU 集群能够提供所需的并行计算算力。
+*   **算法演进**：利用 AI-RAN 的机器学习框架，可以更有效地进行感知波形设计和多路径干扰消除。
+*   **资源动态平衡**：通过 RIC（无线智能控制器），系统可以根据实时需求在通信任务与感知任务之间动态分配频谱和算力资源。
+
 ## 参考链接
 - [AI-RAN Alliance Official](https://ai-ran.org/)
 - [NVIDIA AI-RAN Solutions](https://www.nvidia.com/en-us/networking/telecommunications/ai-ran/)
 - [SoftBank AITRAS Press Release](https://www.softbank.jp/en/corp/news/press/2024/)
 
 ## Update History
+- 2026-03-27: 新增第 10 章节，阐述 AI-RAN 与 [[通感一体化-ISAC技术全景指南]] 的协同关系。
 - 2026-03-04: 修复因操作失误导致的 GPU 部署位置详细描述丢失问题，确保全量内容还原。
 - 2026-03-04: 新增软银 AITRAS 深度实战案例及量化实测指标。
 - 2026-03-04: 修正操作失误，还原丢失的行业进展与学习路径章节。
