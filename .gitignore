@@ -11,3 +11,6 @@
 
 # Syncthing 配置目录
 .stfolder/
+
+# AI 知识推文草稿（私有内容）
+social-media-posts/
