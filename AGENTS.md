@@ -99,3 +99,38 @@
 - **历史记录**：`Update History` 必须保留，不能删除旧记录。
 - **文件命名** 必须具有描述性，避免使用 `temp.md` 或 `notes.md`。
 - **不要** 覆盖用户手动创建的非知识类文件（如代码源文件）。
+
+# 常用工具用法参考
+
+## 图片生成工具 (mmx image generate)
+
+使用 `image-01` 模型生成 AI 图像，基础命令格式：
+
+```bash
+mmx image generate --prompt <text> [flags]
+```
+
+**核心参数：**
+
+| 参数 | 类型 | 说明 |
+|------|------|------|
+| `--prompt` | string, **必填** | 图像描述文本 |
+| `--aspect-ratio` | string | 宽高比，如 `16:9`、`1:1` |
+| `--n` | number | 生成图片数量（默认：1） |
+| `--seed` | number | 随机种子，用于复现结果 |
+| `--width / --height` | number | 自定义尺寸（512-2048像素，8的倍数） |
+| `--prompt-optimizer` | boolean | 生成前优化提示词 |
+| `--aigc-watermark` | boolean | 嵌入 AI 生成水印 |
+| `--response-format` | string | 返回格式：`url`（默认）或 `base64` |
+| `--out-dir` | string | 下载图片到指定目录 |
+| `--out-prefix` | string | 文件名前缀（默认：`image`） |
+
+**使用示例：**
+
+```bash
+# 生成单张图片并输出 URL
+mmx image generate --prompt "A cat in a spacesuit" --output json --quiet
+
+# 生成 3 张图片并保存到本地
+mmx image generate --prompt "Logo" --n 3 --out-dir ./gen/ --quiet
+```

@@ -45,6 +45,7 @@
 ### AI/Agent开发/
 - [[AI-Agent-架构与框架全景指南]] - 主流 Agent 架构模式与开发框架对比
 - [[LangGraph-ReAct-Agent实战指南]] - LangGraph 框架下的 ReAct 模式实现
+- [[Vibe-Coding-实战指南]] - Karpathy 提倡的“意图驱动”编程技巧 (2026-05-12)
 
 ### AI/语音技术/
 - [[Web端语音唤醒实现方案]] - 浏览器侧的 VAD 与唤醒词技术
